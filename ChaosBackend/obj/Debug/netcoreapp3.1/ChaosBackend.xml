@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChaosBackend</name>
+    </assembly>
+    <members>
+        <member name="M:ChaosBackend.Controllers.AccountsController.Login(ChaosBackend.DTOs.AccountDtos.LoginDto)">
+            <summary>
+            This endpoint returns a token
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/accounts/login
+                {
+                    "username":"fazailjabbarov",
+                    "password": "Sumqayit123"
+                }
+            
+            </remarks>
+            <param name="loginDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChaosBackend.Controllers.PostCommentsController.Update(ChaosBackend.Entities.PostComment)">
+            <summary>
+            
+            </summary>
+            <param name="comment"></param>
+            <returns></returns>
+            <response code="204">Entity updated successfully</response>
+            <response code="400">Model is not valid</response>
+            <response code="404">Entity is not found by Id</response>
+        </member>
+        <member name="M:ChaosBackend.Controllers.PostsController.Update(ChaosBackend.Entities.Post)">
+            <summary>
+            
+            </summary>
+            <param name="post"></param>
+            <returns></returns>
+            <response code="204">Entity updated successfully</response>
+            <response code="400">Model is not valid</response>
+            <response code="404">Entity is not found by Id</response>
+        </member>
+    </members>
+</doc>
